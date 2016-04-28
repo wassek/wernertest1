@@ -1,0 +1,12 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+  
+  
+  
+// Mixin pour l'ajout d'une propriété chapo sur les pages
+[jmix:pageChapoSommaire] mixin
+extends = jnt:page
+ - chapo (string) i18n   
+ - nbActualitesAffichees (long) = '5' indexed=no noqueryorder nofulltext < '[0,)'
+ - nbCaracteresAffiches (long) = '425' indexed=no noqueryorder nofulltext < '[0,)'  
+  
